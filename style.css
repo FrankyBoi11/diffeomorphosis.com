@@ -1,5 +1,50 @@
 body {
     background-color: #101010;
+    background-image: url("res/background images/painted-solid-concrete-wall-textured-background.jpg");
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+#head {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    height: 17vh;
+
+    padding: 0;
+    margin: 5vh 0 10vh 0;
+}
+
+#headbox {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    height: 17vh;
+
+    padding: 0;
+    margin: 0;
+
+    background-image: url("res/background images/solid-painted-concrete-wall-textured-backdrop.jpg");
+    border: 10px solid rgba(215, 167, 101, 100);
+    border-style: outset;
+}
+
+#headbox img {
+    padding: 0;
+    margin: auto 10px;
+
+    width: 15vh;
+    height: 15vh;
+}
+
+#headbox h1 {
+    padding:0;
+    margin: auto 10px;
+    
+    font-size: 10vh;
+    color: #d7d7d7;
 }
 
 /* ---------------------------------------------------------------------------------------------------- */
@@ -14,9 +59,9 @@ nav {
     justify-content: center;
     align-content: center;
     
-    border: 1px solid #d7d7d7;
-    border-width: 4px 0;
-    background-color: rgba(10, 10, 10, 0);;
+    border: 5px solid rgba(215, 167, 101, 100);
+    border-style: outset;
+    background-image: url("res/background images/solid-painted-concrete-wall-textured-backdrop.jpg");
 
     margin: auto;
 }
@@ -65,7 +110,7 @@ nav ul li a::after {
     height: 2px; /* 3. Adjust the thickness of the underline as needed. */
     bottom: 0;
     left: 0;
-    background-color: #d7d7d7;
+    background-color: rgba(215, 167, 101, 100);
     transform: scaleX(0); /* 4. Initially hide the underline by scaling its width to 0. */
     transition: transform 0.3s ease-out; /* 5. Animate the transform property. */
     transform-origin: center; /*(Optional) transform-origin is center by default. */
@@ -88,29 +133,80 @@ nav ul li a:hover::after {
 
 /* ---------------------------------------------------------------------------------------------------- */
 
-#head {
+main {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.spacer {
+    flex: 1;
+    display: block;
+}
+
+#picbio {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
 
-    height: 10vh;
-
     padding: 0;
-    margin: 5vh 0 10vh 0;
+    margin-top: 5%;
 }
 
-#head img {
-    padding: 0;
-    margin: 0;
+#picbio img {
+    display: block;
 
-    width: 15vh;
-    height: 15vh;
+    width: 50%;
+    padding: 5px;
+    margin: 0 auto 5% auto;
+
+    border: 5px solid rgba(215, 167, 101, 100);
+    border-style: outset;
 }
 
-#head h1 {
-    padding: 2vh 0;
-    margin: 0 10px;
-    
-    font-size: 10vh;
+#picbio p {
+    display: block;
+
+    width: 50%;
+    height: fit-content;
+    padding: 10px;
+    margin: auto;
+
+    background-image: url("res/background images/solid-painted-concrete-wall-textured-backdrop.jpg");
+    border: 5px solid rgba(215, 167, 101, 100);
+    border-style: outset;
+    color: #d7d7d7;
+    font-size: 125%;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+aside {
+    flex: 1;
+
+    border: 5px solid rgba(215, 167, 101, 100);
+    border-style: outset;
+    padding: 10px;
+    margin-top: 5%;
+
+    height: fit-content;
+    background-image: url("res/background images/solid-painted-concrete-wall-textured-backdrop.jpg");
+}
+
+aside h3 {
+    color: #d7d7d7;
+}
+
+aside p {
     color: #d7d7d7;
 }
