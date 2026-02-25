@@ -3,7 +3,8 @@
 <html>
     <head>
         <title>Diffeomorphosis</title>
-        <link rel="icon" href="res/Personal Logos/jpegs/dark mode logo super simple thin square.jpg" type="image/svg+xml">
+        <!-- <link rel="icon" href="res/Personal Logos/jpegs/dark mode logo super simple thin square.jpg" type="image/svg+xml"> -->
+        <link rel="icon" href="res/Personal Logos/pngs/dark mode logo simple circle.png" type="image/svg+xml">
         <link rel="stylesheet" href="style.css">
     </head>
 
@@ -11,19 +12,29 @@
 
         <div id="head">
             <div id="headbox">
-                <img src="res/Personal Logos/pngs/dark mode logo fancy transparent.png">
-                <h1>Diffeomorphosis</h1>
+                <!-- <img src="res/Personal Logos/pngs/dark mode logo fancy transparent.png"> -->
+                <img src="res/Personal Logos/pngs/dark mode logo simple circle.png">
+                <h1 class="chtext">Diffeomorphosis</h1>
             </div>
         </div>
 
         <nav>
             <div id="bar"></div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact Info</a></li>
-                <li><a href="#">CV</a></li>
+                <li><a class="navitem chtext" href="#">Home</a></li>
+                <li><a class="navitem chtext" href="#">About Me</a></li>
+                <li>
+                    <div class="dropdown">
+                        <p class="navitem dropbtn chtext">Blog</p>
+                        <div class="dropdown-content">
+                            <div class="dropdown-item"><a class="navitem chtext" href="#">Link 1</a></div>
+                            <div class="dropdown-item"><a class="navitem chtext" href="#">Link 2</a></div>
+                            <div class="dropdown-item"><a class="navitem chtext" href="#">Link 3</a></div>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="navitem chtext" href="#">Contact Info</a></li>
+                <li><a class="navitem chtext" href="#">CV</a></li>
             </ul>
         </nav>
 
@@ -31,7 +42,7 @@
 
             <div class="spacer"></div>
 
-            <div id="picbio">
+            <div id="picbio" class="chtext">
                 <img src="res/profile pictures/Profile picture 1 wide.JPG">
                 <p>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
@@ -45,7 +56,7 @@
                 </p>
             </div>
 
-            <aside>
+            <aside class="chtext">
                 <h3>Sidebar Title</h3>
                 <p>Related content or links.</p>
             </aside>
